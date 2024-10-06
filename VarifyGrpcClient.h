@@ -35,7 +35,7 @@ public:
 
 private:
     VarifyGrpcClient() {
-        std::shared_ptr<Channel> channel = grpc::CreateChannel("0.0.0.0:50051", 
+        std::shared_ptr<Channel> channel = grpc::CreateChannel("127.0.0.1:50051", 
             grpc::InsecureChannelCredentials());
         stub_ = VarifyService::NewStub(channel);
     }
