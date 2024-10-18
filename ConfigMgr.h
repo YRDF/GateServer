@@ -14,6 +14,7 @@ struct SectionInfo {
         }
 
         this->_section_datas = src._section_datas;
+        return *this;
     }
 
     std::map<std::string, std::string> _section_datas;
@@ -36,7 +37,11 @@ public:
         }
         return _config_map[section];
     }
-    ConfigMgr();
+
+    static ConfigMgr& Inst() {
+        static ConfigMgr cfg_mgr;
+        return cfg_mgr;
+    }
 
     ConfigMgr(const ConfigMgr& src) {
         this->_config_map = src._config_map;
@@ -51,6 +56,7 @@ public:
     };
 
 private:
+    ConfigMgr();
     // ´æ´¢sectionºÍkey-value¶ÔµÄmap  
     std::map<std::string, SectionInfo> _config_map;
 };

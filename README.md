@@ -12,3 +12,4 @@
         RegPost中调用VarifyGrpcClient::GetInstance()->GetVarifyCode请求验证码
         VarifyServer服务器发送验证码并通知本服务器，LogicSystem::LogicSystem的RegGet中获取验证码
         通过ConfigMgr来对comfig.ini中固定的内容进行管理。
+        用线程池让gateserver并发
