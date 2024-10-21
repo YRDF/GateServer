@@ -15,4 +15,8 @@
         用线程池让gateserver并发
         搭建redis服务器
         自己搞了一天，也没搞好ubuntu&docker&mysql&navicat的连通，老是报错。需要重新研究。
-        发现是因为本地连接本地虚拟机mysql的原因。
+        发现是因为本地连接本地虚拟机mysql的原因。暂时使用本地的ip，mysql。
+        使用Mysql Connector C++ 这个库来访问mysql。
+        封装mysql连接池，封装DAO操作层。
+        使用navicat创建数据库zzz1，zzz1三剑客添加user表和user_id表，新建存储过程。
+        建立一个数据库管理者MysqlDao类用来实现服务层，对接逻辑层的调用，更改逻辑层RegPost代码，查找数据库。
