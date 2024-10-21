@@ -3,8 +3,8 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <IncludePath>F:\boost\boost_1_84_0;F:\json\libjson\include;F:\redis\redis_tool\deps\hiredis;$(IncludePath)</IncludePath>
-    <LibraryPath>F:\redis\redis_tool\lib;F:\json\libjson\lib;F:\boost\boost_1_84_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>F:\boost\boost_1_84_0;F:\json\libjson\include;F:\redis\redis_tool\deps\hiredis;F:\mysql\mysql-connector-c++-8.3.0-winx64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\redis\redis_tool\lib;F:\json\libjson\lib;F:\boost\boost_1_84_0\stage\lib;F:\mysql\mysql-connector-c++-8.3.0-winx64\lib64\vs14;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
