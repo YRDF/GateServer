@@ -15,3 +15,4 @@
         用线程池让gateserver并发
         搭建redis服务器
         自己搞了一天，也没搞好ubuntu&docker&mysql&navicat的连通，老是报错。需要重新研究。
+        发现是因为本地连接本地虚拟机mysql的原因。
